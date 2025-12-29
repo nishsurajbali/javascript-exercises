@@ -1,8 +1,13 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(n) {
+  return Math.round(((n - 32)/ 1.8) * 10) / 10;
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(n) {
+  return Math.round(((n * 1.8) + 32) * 10) /10;
 };
+
+
+console.log(convertToCelsius(100));
 
 // Do not edit below this line
 module.exports = {
